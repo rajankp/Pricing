@@ -1,6 +1,6 @@
 @import "../../../assets/scss/global-colors.scss";
 
-.icon-section{
+.icon-section {
 
     &:host {
         display: flex;
@@ -12,11 +12,32 @@
         display: flex;
         align-items: center;
         font-size: x-large;
+
+        @media screen and (max-width: $tablet) {
+            font-size: large;
+        }
+
+        @media screen and (max-width: $mobile) {}
     }
 
-    .green-icon{
+    .green-icon {
         color: rgb(154, 245, 154);
     }
-    
+
 }
 
+.badgeCss {
+    span.mat-badge-content.mat-badge-active {
+        @media screen and (max-width: $tablet) {
+            font-size: large;
+        }
+    
+        @media screen and (max-width: $mobile) {
+            right: 3px;
+            top: -2px;
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+        }
+    }
+}

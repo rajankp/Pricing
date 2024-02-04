@@ -1,8 +1,10 @@
+@import "../../../assets/scss/global-colors.scss";
+
 .user-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: auto;
 
     .user-sub-menu {
         display: flex;
@@ -20,6 +22,12 @@
 
         .user-name {
             margin: auto;
+
+            @media screen and (max-width: $tablet) {
+                display: none;
+            }
+
+            @media screen and (max-width: $mobile) {}
         }
 
         [aria-expanded="true"] i {

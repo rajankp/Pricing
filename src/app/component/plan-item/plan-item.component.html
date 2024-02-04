@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <button class="btn" [ngClass]="(planItem?.planIsRecommended === true) ? 'btn-selected': ''">Select Plan</button>
+      <button class="btn" (click)="selectPlan($event)" [ngClass]="(planItem?.planIsRecommended === true) ? 'btn-selected': ''">Select Plan</button>
     </mat-card-content>
   </mat-card>
 

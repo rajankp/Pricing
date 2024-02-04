@@ -4,18 +4,64 @@
     padding: 0.4rem 0.7rem 0.4rem 1rem;
     font-size: smaller;
 
+    @media screen and (max-width: $tablet) {
+        padding: 0.4rem 0 0.4rem;
+    }
+
+    @media screen and (max-width: $mobile) {}
+
     ul {
         margin-bottom: 1rem;
+
+        p {
+            @media screen and (max-width: $tablet) {
+                display: none;
+            }
+
+            @media screen and (max-width: $mobile) {}
+        }
+
         li {
             display: flex;
             top: 70px;
             align-items: center;
             justify-content: flex-start;
-            margin: .5rem;    
+            margin: .5rem;
+
             a {
                 padding-left: 1rem;
                 text-decoration: none;
                 color: $fg-color;
+                transition: font-size .33s ease;
+                opacity: 1;
+                font-size: small;
+
+                &:hover {
+                    font-size: large;
+                }
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+
+                @media screen and (max-width: $mobile) {}
+            }
+
+            .badge-counts {
+                margin: auto;
+                order: 2;
+                background-color: black;
+                color: white;
+                width: 20px;
+                height: 15px;
+                text-align: center;
+                border-radius: 30%;
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+
+                @media screen and (max-width: $mobile) {}
             }
         }
     }

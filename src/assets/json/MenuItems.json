@@ -44,7 +44,7 @@
           "menuItemName": "Knowledge Base"
         },
         {
-          "menuItemIcon": "editor_choice",
+          "menuItemIcon": "lightbulb",
           "menuItemName": "Product Updates"
         }
       ]

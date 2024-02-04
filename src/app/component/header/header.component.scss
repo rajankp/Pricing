@@ -6,22 +6,41 @@ nav {
 
     .container {
         height: 60px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
+        @media screen and (max-width: $tablet) {
+            
+        }
+
+        @media screen and (max-width: $mobile) {}
+
         .company {
             display: flex;
             width: 14%;
+
+            @media screen and (max-width: $tablet) {
+                width: 0;
+            }
+
+            @media screen and (max-width: $mobile) {}
 
             .logo {
                 width: 60px;
                 height: 60px;
                 margin-left: .5rem;
                 padding-left: 0.7rem;
-                /* border-radius: 50%;  */
                 bottom: 0.4rem;
-             }
+
+                @media screen and (max-width: $tablet) {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                @media screen and (max-width: $mobile) {}
+            }
 
             .company-name {
                 margin: auto;
@@ -30,9 +49,15 @@ nav {
                 font-weight: bolder;
                 align-items: flex-start;
                 text-align: left;
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+
+                @media screen and (max-width: $mobile) {}
             }
 
-            
+
         }
 
         .search-bar {
@@ -48,11 +73,24 @@ nav {
                 font-size: 0.9rem;
                 color: $fg-color;
             }
+
+            @media screen and (max-width: $tablet) {
+                width: 55%;
+            }
+
+            @media screen and (max-width: $mobile) {}
         }
 
         .user-section {
             width: 20%;
+
+            @media screen and (max-width: $tablet) {
+                width: 25%;
+            }
+
+            @media screen and (max-width: $mobile) {
+                width: 20%
+            }
         }
     }
 }
-

@@ -5,6 +5,7 @@
             <li *ngFor="let menuItem of menuListItem.menuGroupItems">
                 <gb-icon badgeIcon={{menuItem.menuItemIcon}}></gb-icon>
                 <a href="#">{{menuItem.menuItemName}}</a>
+                <span class="badge-counts" *ngIf="!!menuItem.menuItemBadgeNumber">{{menuItem.menuItemBadgeNumber}}</span>
             </li>
         </ul>
     </nav>
