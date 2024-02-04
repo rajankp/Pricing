@@ -1,0 +1,11 @@
+<div class="side-menu">
+    <nav>
+        <ul *ngFor="let menuListItem of menuList$ | async">
+            <p *ngIf="!!menuListItem.menuGroupName">{{menuListItem.menuGroupName}}</p>
+            <li *ngFor="let menuItem of menuListItem.menuGroupItems">
+                <gb-icon badgeIcon={{menuItem.menuItemIcon}}></gb-icon>
+                <a href="#">{{menuItem.menuItemName}}</a>
+            </li>
+        </ul>
+    </nav>
+</div>

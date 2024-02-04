@@ -1,0 +1,49 @@
+[{
+    "planMonthly": [
+
+    ],
+    "planAnnually": [{
+        "planPrice": 12,
+        "planName": "Basic Plan",
+        "planText": "Start your business",
+        "planFreeDomain": true,
+        "planGoogleAdsCredit": true,
+        "planMaxUsers": "5",
+        "planSSLSecurity": true,
+        "planMaxProducts": 100,
+        "planChatInbox": false,
+        "planUnlimitedStorage": false,
+        "planNoTransactionFee": false
+        
+        
+    },{
+        "planIsRecommended": true,
+        "planPrice": 20,
+        "planName": "Professional",
+        "planText": "Start your business",
+        "planFreeDomain": true,
+                "planGoogleAdsCredit": true,
+                "planMaxUsers": "5",
+                "planSSLSecurity": true,
+                "planMaxProducts": 100,
+                "planChatInbox": true,
+                "planUnlimitedStorage": false,
+                "planNoTransactionFee": false
+        
+        
+    },{
+        "planPrice": 45,
+        "planName": "Business",
+        "planText": "Start your business",
+        "planFreeDomain": true,
+        "planGoogleAdsCredit": true,
+        "planMaxUsers": "5",
+        "planSSLSecurity": true,
+        "planMaxProducts": 100,
+        "planChatInbox": true,
+        "planUnlimitedStorage": true,
+        "planNoTransactionFee": true
+        
+        
+    }]
+}]

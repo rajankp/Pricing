@@ -1,0 +1,22 @@
+.sub-menu-container {
+
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    width: 320px;
+    z-index: 999;
+
+    .sub-menu {
+        background: #fff;
+        margin: 0.2rem;
+        padding: 0.2rem;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%; 
+        bottom: 0.4rem;
+     }
+}
+

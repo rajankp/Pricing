@@ -1,0 +1,65 @@
+[
+    {
+      "menuGroupItems": [
+        {
+          "menuItemIcon": "home",
+          "menuItemName": "Dashboard"
+        },
+        {
+          "menuItemIcon": "list",
+          "menuItemName": "Orders",
+          "menuItemBadgeNumber": 16
+        },
+        {
+          "menuItemIcon": "sell",
+          "menuItemName": "Products"
+        },
+        {
+          "menuItemIcon": "folder",
+          "menuItemName": "Categories"
+        },
+        {
+          "menuItemIcon": "group",
+          "menuItemName": "Customers"
+        },
+        {
+          "menuItemIcon": "signal_cellular_alt",
+          "menuItemName": "Reports"
+        },
+        {
+          "menuItemIcon": "star",
+          "menuItemName": "Coupons"
+        },
+        {
+          "menuItemIcon": "chat",
+          "menuItemName": "Inbox"
+        }
+      ]
+    },
+    {
+      "menuGroupName": "Other Information",
+      "menuGroupItems": [
+        {
+          "menuItemIcon": "help",
+          "menuItemName": "Knowledge Base"
+        },
+        {
+          "menuItemIcon": "editor_choice",
+          "menuItemName": "Product Updates"
+        }
+      ]
+    },
+    {
+      "menuGroupName": "Settings",
+      "menuGroupItems": [
+        {
+          "menuItemIcon": "person",
+          "menuItemName": "Personal Settings"
+        },
+        {
+          "menuItemIcon": "settings",
+          "menuItemName": "Global Settings"
+        }
+      ]
+    }
+  ]

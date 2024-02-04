@@ -1,0 +1,12 @@
+<div class="user-info">
+    <gb-icon badgeIcon="chat"></gb-icon>
+    <gb-icon [hideBadge]=false badgeClass="badgeCss" [badgeCount]="5" badgeIcon="notifications" matBadgeColor="warn"></gb-icon>
+    <a class="user-sub-menu" [matMenuTriggerFor]="menu" data-toggle="collapse">
+        <img src="{{user.userPic}}" class="user-logo">
+        <p class="user-name">{{user.firstName+' '+user.lastName}}</p>
+    </a>
+    <mat-menu #menu="matMenu" class="collapse">
+      <button mat-menu-item>Logout</button>
+      <button mat-menu-item>Settings</button>
+    </mat-menu>
+</div>

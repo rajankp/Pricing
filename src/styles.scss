@@ -1,0 +1,17 @@
+
+$bg-color: hsl(252, 30%, 85%);
+$fg-color: hsl(229, 13%, 49%);
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $bg-color;
+    color: $fg-color; 
+    overflow: auto;
+}

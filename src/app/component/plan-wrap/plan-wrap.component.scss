@@ -1,0 +1,36 @@
+.plan-wrap-container {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+
+    .plan-container {
+        width: 100%;
+        display: flex;
+
+        .plan-desc {
+            width: 100%;
+        }
+        .plan-header-title {
+            font-weight: 900;
+            color: #000;
+        }
+
+        .bill-toggle-buttons {
+            margin-bottom: 2rem;
+            
+            .btn {
+                padding: 8px;
+                border-radius: 3px;
+                background-color: rgb(255, 255, 255);
+                border: .5px solid rgb(225, 225, 226);
+            }
+            .btn-selected {
+                border: 1px solid rgb(45, 129, 225);
+                color: rgb(45, 129, 225);
+            }
+        }
+    }
+}

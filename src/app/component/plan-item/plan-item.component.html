@@ -1,0 +1,69 @@
+<div class="plan-cards" *ngFor="let plan of planList$ | async">
+
+  <mat-card *ngFor="let planItem of plan.planAnnually">
+    <label [ngClass]="(planItem?.planIsRecommended === true) ? 'blue-label': ''" *ngIf="planItem?.planIsRecommended"
+      for="">Recommended</label>
+
+    <mat-card-content>
+      <div class="price">
+        <p class="plan-price">${{planItem.planPrice}}</p><p class="plan-tenure">{{"/month"}}</p>
+      </div>
+      <div class="plan-name">
+        {{planItem.planName}}
+      </div>
+
+      <div class="plan-desc">
+        {{planItem.planText}}
+      </div>
+      
+      <mat-divider></mat-divider>
+      <div class="plan-features">
+        <div class="plan-feature-item">
+          <gb-icon badgeClass="{{(planItem.planFreeDomain) ? 'green-icon' : ''}}"
+            badgeIcon="{{(planItem.planFreeDomain) ? 'check_circle' : 'do_not_disturb_on'}}"></gb-icon>
+          <p>{{planHtmlText.planFreeDomain}}</p>
+        </div>
+        <div class="plan-feature-item">
+          <gb-icon badgeClass="{{(planItem.planGoogleAdsCredit) ? 'green-icon' : ''}}"
+            badgeIcon="{{(planItem.planGoogleAdsCredit) ? 'check_circle' : 'do_not_disturb_on'}}"></gb-icon>
+          <p>{{planHtmlText.planGoogleAdsCredit}}</p>
+        </div>
+        <div class="plan-feature-item">
+          <gb-icon badgeClass="{{(planItem.planMaxUsers) ? 'green-icon' : ''}}"
+            badgeIcon="{{(planItem.planMaxUsers) ? 'check_circle' : 'do_not_disturb_on'}}"></gb-icon>
+          <p>{{planHtmlText.planMaxUsers}}</p>
+        </div>
+        <div class="plan-feature-item">
+          <gb-icon badgeClass="{{(planItem.planSSLSecurity) ? 'green-icon' : ''}}"
+            badgeIcon="{{(planItem.planSSLSecurity) ? 'check_circle' : 'do_not_disturb_on'}}"></gb-icon>
+          <p>{{planHtmlText.planSSLSecurity}}</p>
+        </div>
+        <div class="plan-feature-item">
+          <gb-icon badgeClass="{{(planItem.planMaxProducts) ? 'green-icon' : ''}}"
+            badgeIcon="{{(planItem.planMaxProducts) ? 'check_circle' : 'do_not_disturb_on'}}"></gb-icon>
+          <p>{{planHtmlText.planMaxProducts}}</p>
+        </div>
+        <div class="plan-feature-item">
+          <gb-icon badgeClass="{{(planItem.planChatInbox) ? 'green-icon' : ''}}"
+            badgeIcon="{{(planItem.planChatInbox) ? 'check_circle' : 'do_not_disturb_on'}}"></gb-icon>
+          <p>{{planHtmlText.planChatInbox}}</p>
+        </div>
+        <div class="plan-feature-item">
+          <gb-icon badgeClass="{{(planItem.planUnlimitedStorage) ? 'green-icon' : ''}}"
+            badgeIcon="{{(planItem.planUnlimitedStorage) ? 'check_circle' : 'do_not_disturb_on'}}"></gb-icon>
+          <p>{{planHtmlText.planUnlimitedStorage}}</p>
+        </div>
+        <div class="plan-feature-item">
+          <gb-icon badgeClass="{{(planItem.planNoTransactionFee) ? 'green-icon' : ''}}"
+            badgeIcon="{{(planItem.planNoTransactionFee) ? 'check_circle' : 'do_not_disturb_on'}}"></gb-icon>
+          <p>{{planHtmlText.planNoTransactionFee}}</p>
+        </div>
+      </div>
+
+      <button class="btn" [ngClass]="(planItem?.planIsRecommended === true) ? 'btn-selected': ''">Select Plan</button>
+    </mat-card-content>
+  </mat-card>
+
+ 
+</div>
+<p class="cancel-subscription">Cancel of upgrade your plan anytime</p>

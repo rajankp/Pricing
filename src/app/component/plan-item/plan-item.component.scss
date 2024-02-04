@@ -1,0 +1,90 @@
+$selected-color: hsl(223, 100%, 56%);
+.plan-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    > * {
+        flex: 1;
+        margin: 1rem;
+    }
+
+    label {
+        position: absolute;
+        color: white;
+        top: -1.5vh;
+        align-self: center;
+        padding: 1px;
+        border-radius: 3px;
+    }
+
+    .plan-feature-item {
+        display: flex;
+    }
+
+    .btn {
+        background: #fff;
+        color: $selected-color;
+        margin: auto;
+        display: block;
+        width: 100%;
+        padding: .4rem;
+        border-radius: 3px;
+        border: 0.3px solid;
+    }
+
+    .btn-selected {
+        background: $selected-color;
+        color: #fff;
+        margin: auto;
+        display: block;
+        width: 100%;
+        padding: .4rem;
+        border-radius: 3px;
+    }
+
+    .blue-label {
+        background: $selected-color;
+        margin: auto 0;
+        align-items: center;
+        width: 100px;
+    }
+
+    .price {
+        display: flex;
+        margin-top: 1rem; 
+        
+        .plan-tenure {
+            margin-left: .5rem;
+        }
+        .plan-price {
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+
+    .plan-name {
+        color: black;
+        font-size: .8rem;
+        font-weight: bold;
+        align-items: flex-start;
+        text-align: left;
+    } 
+
+    .plan-desc {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    
+    .plan-features {
+        margin-top: 1rem;
+    }
+    
+}
+
+.cancel-subscription {
+    align-items: center;
+}
